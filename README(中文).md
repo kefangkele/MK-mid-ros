@@ -61,7 +61,7 @@
             catkin build
 ####      5.3、设置临时环境变量：
             在要运行程序的终端中执行指令：
-            source ~/你的工作空间(例：catkin_ws)/devel/setup.bash
+            source ~/你的工作空间(例：5.1-ros2_ws)/devel/setup.bash
             
             或者让要运行程序的终端处于工作空间级，执行指令：
             source devel/setup.bash
@@ -79,10 +79,10 @@
 
 ## 6.运动测试：
 ####       6.1、在测试之前，建议先把车架起来，或者向底盘下发较小的速度，例如0.03。
-####       6.2、打开新的终端，进入你的工作空间目录(例：catkin_ws)，执行指令
+####       6.2、打开新的终端，进入你的工作空间目录(例：5.1-ros2_ws)，执行指令
                         source devel/setup.bash
                    或者不进人工作空间目录，执行指令
-                        source ~/你的工作空间(例：catkin_ws)/devel/setup.bash
+                        source ~/你的工作空间(例：5.1-ros2_ws)/devel/setup.bash
 ####       6.3、查看话题数据
                         rostopic echo /ctrl_fb
 ####       6.4、执行完6.3的指令后在终端看到反馈的数据不断刷新，说明ROS驱动包运行正常。
@@ -90,7 +90,7 @@
               6.5.1、打开新的终端，进入你的工作空间目录，设置临时环境变量：
                         source devel/setup.bash
                      或者不进人工作空间目录，执行指令
-                        source ~/你的工作空间(例：catkin_ws)/devel/setup.bash
+                        source ~/你的工作空间(例：5.1-ros2_ws)/devel/setup.bash
               6.5.2、此处指令不执行，先输入终端
                         rostopic  pub  -r  100  /ctrl_cmd
               6.5.3、后面的内容可以按tab键补全，补全之后，要输入档位、速度和转向角，注意角度的单位是度不是弧度，输入完成后敲回车，将遥控器切换到自动挡，这时候就可以看到CAN卡上的红色和蓝色灯都在闪烁，底盘开始运动。

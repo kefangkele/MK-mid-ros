@@ -64,7 +64,7 @@
             
 ####      5.3.Setting temporary environment variables:
     Execute the command in the terminal where you want to run the program:  
-            source ~/your workspace (example: catkin_ws)/devel/setup.bash  
+            source ~/your workspace (example: 5.1-ros2_ws)/devel/setup.bash  
     Or, to keep the terminal where you want to run the program at the workspace level, execute the command:    
             source devel/setup.bash  
 
@@ -77,10 +77,10 @@
 
 ## 6. Motion Test:
 ####      6.1. Before testing, it is recommended to lift the chassis or send a minimal speed command to the chassis (e.g., 0.03).
-####      6.2. Open a new terminal, navigate to your workspace directory (e.g., catkin_ws), and execute:
+####      6.2. Open a new terminal, navigate to your workspace directory (example: 5.1-ros2_ws), and execute:
             source devel/setup.bash
             OR (without entering the workspace directory):
-            source ~/your workspace(e.g.catkin_ws)/devel/setup.bash
+            source ~/your workspace(example: 5.1-ros2_ws)/devel/setup.bash
 
 ####      6.3. Monitor topic
             rostopic echo /ctrl_fb
@@ -90,7 +90,7 @@
             6.5.1. Open a new terminal, navigate to your workspace directory, and set temporary environment variables:
                         source devel/setup.bash
                    OR (without entering the workspace directory):
-                        source ~/your workspace(e.g.catkin_ws)/devel/setup.bash
+                        source ~/your workspace(example: 5.1-ros2_ws)/devel/setup.bash
             6.5.2. Prepare the command (do not execute yet). Enter in the terminal:
                         rostopic pub -r 100 /ctrl_cmd
             6.5.3. Press the Tab key to autocomplete the command. After autocompletion, input gear, speed, and steering angle (note: angle units are in degrees, not radians). Once entered, press Enter. Switch the remote controller to auto mode — the red and blue LEDs on the CAN card will blink, and the chassis will start moving.      
